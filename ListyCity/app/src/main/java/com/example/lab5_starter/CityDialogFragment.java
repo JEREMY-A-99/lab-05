@@ -60,12 +60,17 @@ public class CityDialogFragment extends DialogFragment {
         else {
             city = null;}
 
+        String positiveTitle = "Continue";
+        if (Objects.equals(tag, "City Details")){
+            positiveTitle = "Delete";
+        }
+
         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
         return builder
                 .setView(view)
                 .setTitle("City Details")
                 .setNegativeButton("Cancel", null)
-                .setPositiveButton("Continue", (dialog, which) -> {
+                .setPositiveButton(positiveTitle, (dialog, which) -> {
                     String title = editMovieName.getText().toString();
                     String year = editMovieYear.getText().toString();
                     if (Objects.equals(tag, "City Details")) {
