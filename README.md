@@ -2,8 +2,8 @@
 
 ## Student Details
 
-- **Full Name:** `<Enter name>`
-- **CCID:** `<Enter ccid>`
+- **Full Name:** `<Jeremy Ajoku>`
+- **CCID:** `<1823488>`
 
 ## References and Resources
 
